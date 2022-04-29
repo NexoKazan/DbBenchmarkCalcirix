@@ -58,7 +58,7 @@ namespace DbBenchmark.Calcite
             arguments.Append(";Query=");
             arguments.Append(InsertSchemaToQuery(schema, query));
             arguments.Append("\"");
-            Console.WriteLine(arguments.ToString().Split(";")[7]);
+            //Console.WriteLine(arguments.ToString().Split(";")[7]);
             var processInfo = new ProcessStartInfo(ConnectionStringParser.GetAdapterFile(ConnectionString))
             {
                 Arguments = arguments.ToString(),
